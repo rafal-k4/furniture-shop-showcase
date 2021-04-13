@@ -13,8 +13,10 @@ app-footer {
 
 app-header {
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 app-footer {
-    width: 100%
+    width: 100%;
+    margin-top: 3rem;
 }
