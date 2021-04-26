@@ -18,5 +18,23 @@
     padding: 0;
     display: flex;
     justify-content: space-evenly;
-    width: 70%;
+    width: 90%;
+}
+
+.nav-list-small {
+    display: none;
+}
+
+.nav-list-large {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list-large {
+        display: none;
+    }
+    .nav-list-small {
+        display: flex;
+        justify-content: space-between;
+    }
 }
