@@ -3,7 +3,10 @@
 </div>
 
 <div class="flex navbar">
-    <ul class="nav-list nav-list-large">
+    <ul 
+    class="nav-list nav-list-large" 
+    [style.top]="showFixedNavbar ? '0' : '-110vh'"
+    [style.left]="showFixedNavbar ? '0' : '-110vw'">
         <li> 
             <a routerLink="/">
                 <fa-icon [icon]="faHome"></fa-icon>
@@ -35,6 +38,8 @@
                 <fa-icon [icon]="faHome"></fa-icon>
             </a> 
         </li>
-        <li> <fa-icon [icon]="faHamburger"></fa-icon> </li>
+        <li (click)="toggleFixedNavbar()"> 
+            <fa-icon [icon]="faHamburger"></fa-icon> 
+        </li>
     </ul>
 </div>

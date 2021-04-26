@@ -1,3 +1,4 @@
+
 .flex {
     display: flex;
     justify-content: center;
@@ -7,8 +8,8 @@
 .navbar {
     margin-top: 1rem;
     height: 3rem;
-    background-color: #2a2b2b;
-    color: aliceblue;
+    background-color: var(--dark);
+    color: var(--white);
     list-style-type: none;
 }
 
@@ -44,4 +45,22 @@
     .nav-list-small a {
         display: block;
     }    
+
+    .nav-list.nav-list-large {
+        position: fixed;
+        display: flex;
+        height: 100vh;
+        width: min(15rem, 80vw);
+        flex-direction: column;
+        z-index: 1000;
+        background-color: var(--white);
+        color: var(--dark);
+        left: 0;
+        top: 0;
+        box-shadow: 0 0 0 1000px rgb(0 0 0 / 50%);
+        transition: 300ms ease-out;
+    }
+    .nav-list-large li {
+        margin-left: 5vw;
+    }
 }

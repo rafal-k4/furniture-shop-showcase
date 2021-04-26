@@ -1,7 +1,7 @@
 
 div.footer {
     min-height: 5rem;
-    background-color: #c9c9c98f;
+    background-color: var(--gray);
 }
 
 .flex-center {

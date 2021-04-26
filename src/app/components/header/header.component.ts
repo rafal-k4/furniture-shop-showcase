@@ -14,9 +14,16 @@ export class HeaderComponent implements OnInit {
   faContact = faAddressCard;
   faHamburger = faBars;
 
+  showFixedNavbar = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleFixedNavbar() {
+    this.showFixedNavbar = !this.showFixedNavbar;
+    console.log(this.showFixedNavbar)
   }
 
 }
