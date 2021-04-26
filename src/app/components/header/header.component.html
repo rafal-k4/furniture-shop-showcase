@@ -4,13 +4,37 @@
 
 <div class="flex navbar">
     <ul class="nav-list nav-list-large">
-        <li> <fa-icon [icon]="faHome"></fa-icon> Strona główna </li>
-        <li> <fa-icon [icon]="faProducts"></fa-icon> Produkty </li>
-        <li> <fa-icon [icon]="faAboutUs"></fa-icon> O nas </li>
-        <li> <fa-icon [icon]="faContact"></fa-icon> Kontakt </li>
+        <li> 
+            <a routerLink="/">
+                <fa-icon [icon]="faHome"></fa-icon>
+                Strona główna 
+            </a> 
+        </li>
+        <li> 
+            <a routerLink="products">
+                <fa-icon [icon]="faProducts"></fa-icon>
+                Produkty 
+            </a> 
+        </li>
+        <li> 
+            <a routerLink="about-us">
+                <fa-icon [icon]="faAboutUs"></fa-icon>
+                O nas 
+            </a> 
+        </li>
+        <li> 
+            <a routerLink="contact">
+                <fa-icon [icon]="faContact"></fa-icon>
+                Kontakt 
+            </a> 
+        </li>
     </ul>
     <ul class="nav-list nav-list-small">
-        <li> <fa-icon [icon]="faHome"></fa-icon> </li>
+        <li> 
+            <a routerLink="/">
+                <fa-icon [icon]="faHome"></fa-icon>
+            </a> 
+        </li>
         <li> <fa-icon [icon]="faHamburger"></fa-icon> </li>
     </ul>
 </div>

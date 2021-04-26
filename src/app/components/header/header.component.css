@@ -37,4 +37,11 @@
         display: flex;
         justify-content: space-between;
     }
+    .nav-list-small li {
+        width: 10%;
+        text-align: center;
+    }
+    .nav-list-small a {
+        display: block;
+    }    
 }
