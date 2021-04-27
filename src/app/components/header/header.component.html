@@ -5,8 +5,7 @@
 <div class="flex navbar">
     <ul 
     class="nav-list nav-list-large" 
-    [style.top]="showFixedNavbar ? '0' : '-110vh'"
-    [style.left]="showFixedNavbar ? '0' : '-110vw'">
+    [class.open] = "showFixedNavbar">
         <li> 
             <a routerLink="/">
                 <fa-icon [icon]="faHome"></fa-icon>
