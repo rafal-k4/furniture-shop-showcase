@@ -2,10 +2,16 @@
     <img src="./assets/logo.png" alt="Stalowy Dąb" style="height: 15rem;">
 </div>
 
+
+<div 
+    class="background sidebar"
+    [class.open]="showSideNavbar">
+</div>
+
 <div class="flex navbar">
     <ul 
-    class="nav-list nav-list-large" 
-    [class.open] = "showFixedNavbar">
+    class="nav-list nav-list-large sidebar" 
+    [class.open] = "showSideNavbar">
         <li> 
             <a routerLink="/">
                 <fa-icon [icon]="faHome"></fa-icon>
@@ -37,8 +43,9 @@
                 <fa-icon [icon]="faHome"></fa-icon>
             </a> 
         </li>
-        <li (click)="toggleFixedNavbar()"> 
+        <li class="hamburger-btn" (click)="toggleFixedNavbar()"> 
             <fa-icon [icon]="faHamburger"></fa-icon> 
         </li>
     </ul>
 </div>
+
