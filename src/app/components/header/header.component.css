@@ -41,7 +41,15 @@ div.background {
     opacity: .6;
 }
 
+.nav-list a {
+    color: var(--white);
+}
+
 @media screen and (max-width: 768px) {
+
+    .nav-list-large a {
+        color: var(--dark);
+    }
 
     div.background {
         width: 100vw;
@@ -91,6 +99,7 @@ div.background {
         margin-left: 5vw;
         opacity: 0;
         transition: 300ms ease-out;
+        color: var(--dark);
     }
 
     .nav-list-large.open li {
@@ -112,4 +121,5 @@ div.background {
     .nav-list-large.open li:nth-child(4) {
         transition: 500ms ease-in 500ms;
     }
+
 }
