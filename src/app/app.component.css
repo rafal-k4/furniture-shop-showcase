@@ -5,18 +5,15 @@ div.main {
     width: 70rem;
     max-width: 95%;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 app-footer {
+    width: 100%;
     margin-top: auto;
 }
 
 app-header {
     width: 100%;
     margin-bottom: 1rem;
-}
-
-app-footer {
-    width: 100%;
-    margin-top: 3rem;
 }
