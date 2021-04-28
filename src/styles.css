@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+    --dark: #2a2b2b;
+    --white: hsl(0, 0%, 99%);
+    --gray: #c9c9c98f;
+}
+
 html {
  height: 100%;
 }
@@ -13,7 +19,8 @@ body {
 }
 
 app-root {
- display: flex;
- flex-direction: column;
- min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    align-items: center;
 }

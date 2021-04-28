@@ -1,0 +1,11 @@
+
+div.footer {
+    min-height: 5rem;
+    background-color: var(--gray);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
